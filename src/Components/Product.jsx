@@ -13,7 +13,7 @@ const Product = ({ product }) => {
       <p className="text-[#6b6b6f] mb-3 text-[17px]">Price: ${price}</p>
       <NavLink
         to={`/products/${id}`}
-        className="text-[#8333c6] font-bold border-1 border-[#8333c6] px-[18px] py-[10px] rounded-lg"
+        className="text-[#8333c6] font-bold border-1 border-[#8333c6] px-[18px] py-[7px] rounded-lg"
       >
         View Details
       </NavLink>

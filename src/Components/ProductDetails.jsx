@@ -1,10 +1,13 @@
 import { useEffect, useState } from "react";
 import { BsCart3 } from "react-icons/bs";
 import { FaRegHeart, FaStar } from "react-icons/fa";
-import { useParams } from "react-router-dom";
+import { useOutletContext, useParams } from "react-router-dom";
+import { Bounce, toast } from "react-toastify";
+import { loadDataLS } from "../Utilities/DataLS";
 
 const ProductDetails = () => {
   const [product, setProducts] = useState({});
+  const setCartNumber = useOutletContext();
 
   const { id } = useParams();
   useEffect(() => {
@@ -30,6 +33,55 @@ const ProductDetails = () => {
     rating,
     specification,
   } = product;
+
+  const handleAddToCartButton = (id) => {
+    // get local storage data
+    const cart = loadDataLS();
+    if (!cart.length) {
+      cart.push(id);
+      toast.success("Successfully Added!", {
+        position: "bottom-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: false,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        transition: Bounce,
+      });
+    } else {
+      const result = cart.includes(id);
+      if (result) {
+        toast.error("Already Added!", {
+          position: "bottom-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: false,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+          transition: Bounce,
+        });
+      } else {
+        cart.push(id);
+        toast.success("Successfully Added!", {
+          position: "bottom-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: false,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+          transition: Bounce,
+        });
+      }
+    }
+    setCartNumber(cart.length);
+    localStorage.setItem("cart", JSON.stringify(cart));
+  };
 
   return (
     <div className="relative">
@@ -82,7 +134,10 @@ const ProductDetails = () => {
               <p className="font-bold">({rating})</p>
             </div>
             <div className="flex items-center gap-4 mt-5 ">
-              <button className="flex items-center gap-2 font-bold px-[18px] py-2 text-white bg-[#8f36d8] rounded-full text-[17px] cursor-pointer">
+              <button
+                onClick={() => handleAddToCartButton(id)}
+                className="flex items-center gap-2 font-bold px-[18px] py-2 text-white bg-[#8f36d8] rounded-full text-[17px] cursor-pointer"
+              >
                 Add To Cart <BsCart3 className="text-[20px]" />
               </button>
               <p className="p-2 rounded-full border-2 border-[#d2d2d3] cursor-pointer text-[20px]">
