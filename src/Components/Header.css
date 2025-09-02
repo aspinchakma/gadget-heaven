@@ -1,0 +1,6 @@
+.header_container a {
+  font-weight: bold;
+}
+.header_container .active {
+  color: #9538e2;
+}
