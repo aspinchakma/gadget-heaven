@@ -18,7 +18,10 @@ const Root = () => {
   }, []);
   return (
     <ProductsContext.Provider value={products}>
-      <div className="min-h-screen flex flex-col">
+      <div
+        style={{ fontFamily: "'Sora', sans-serif" }}
+        className="min-h-screen flex flex-col"
+      >
         <Header />
         <div className="flex-1">
           <Outlet />
