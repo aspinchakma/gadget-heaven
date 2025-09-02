@@ -10,6 +10,7 @@ import Laptops from "./Components/Laptops";
 import MacBook from "./Components/MacBook";
 import NotFound from "./Components/NotFound";
 import Phones from "./Components/Phones";
+import ProductDetails from "./Components/ProductDetails";
 import Root from "./Components/Root";
 import SmartWatch from "./Components/SmartWatch";
 import Statistics from "./Components/Statistics";
@@ -61,6 +62,10 @@ const router = createBrowserRouter([
       {
         path: "/statistics",
         element: <Statistics />,
+      },
+      {
+        path: "/products/:id",
+        element: <ProductDetails />,
       },
     ],
   },

@@ -1,15 +1,22 @@
+import { NavLink } from "react-router-dom";
+
 const Product = ({ product }) => {
-  const { title, price, img } = product;
+  const { title, price, img, id } = product;
   return (
-    <div className="p-5 shadow-lg rounded-lg">
+    <div className="p-5 shadow-lg rounded-lg flex flex-col items-start">
       <img
         className="w-full h-[181px] rounded-lg object-cover"
         src={img}
         alt=""
       />
-      <h3>{title}</h3>
-      <p>{price}</p>
-      <button>View Details</button>
+      <h3 className="text-[20px] font-bold flex-1 mt-3 mb-1">{title}</h3>
+      <p className="text-[#6b6b6f] mb-3 text-[17px]">Price: {price}</p>
+      <NavLink
+        to={`/products/${id}`}
+        className="text-[#8333c6] font-bold border-1 border-[#8333c6] px-[18px] py-[10px] rounded-lg"
+      >
+        View Details
+      </NavLink>
     </div>
   );
 };
