@@ -4,9 +4,11 @@ import Header from "./Header";
 
 const Root = () => {
   return (
-    <div className="w-[95%] lg:w-[90%] mx-auto">
+    <div className="w-[95%] lg:w-[90%] mx-auto min-h-screen flex flex-col">
       <Header />
-      <Outlet />
+      <div className="flex-1">
+        <Outlet />
+      </div>
       <Footer />
     </div>
   );
