@@ -1,0 +1,344 @@
+[
+  {
+    "id": 1,
+    "title": "Dell Inspiron 15 Laptop",
+    "img": "https://i.ibb.co.com/F4nRf2Hj/1.jpg",
+    "category": ["laptop"],
+    "price": 650,
+    "description": "The Dell Inspiron 15 Laptop is built for both professionals and students who need performance and reliability. It comes with a powerful Intel i5 processor and 8GB of RAM, ensuring smooth multitasking and fast operations. The 15.6-inch Full HD display offers vibrant colors and sharp clarity, making it perfect for watching movies, editing documents, or browsing the web. With a 256GB SSD, users can enjoy faster boot times and sufficient storage for essential files. The lightweight design makes it portable, while the long battery life supports extended usage without frequent charging. Integrated Intel UHD graphics provide decent visuals for casual gaming and media. Preloaded with Windows 11, it offers a modern interface and productivity tools. The backlit keyboard allows comfortable typing even in low light. Whether for study, work, or entertainment, the Dell Inspiron 15 is a practical and budget-friendly laptop choice for daily needs.",
+    "specification": [
+      "Intel i5 11th Gen",
+      "8GB RAM",
+      "256GB SSD",
+      "15.6 inch FHD Display"
+    ],
+    "availability": true,
+    "rating": 4.4,
+    "brand": "Dell",
+    "stock": 35,
+    "warranty": "1 year"
+  },
+  {
+    "id": 2,
+    "title": "Apple iPhone 14",
+    "img": "https://i.ibb.co.com/VcXJ6fFJ/2.jpg",
+    "category": ["iphone", "phone"],
+    "price": 999,
+    "description": "The Apple iPhone 14 is a flagship smartphone that combines cutting-edge design with powerful performance. Featuring the latest A15 Bionic chip, it delivers seamless multitasking, gaming, and photography experiences. The 6.1-inch Super Retina XDR display offers stunning visuals with vibrant colors and deep blacks. Equipped with an advanced dual-camera system, users can capture professional-quality photos and videos in any lighting condition. Cinematic mode and Photonic Engine enhance video recording and low-light photography. With iOS 16, it brings enhanced security, customization, and productivity tools. The device is built with aerospace-grade aluminum and Ceramic Shield for durability. 5G connectivity ensures faster streaming and downloads. Long battery life keeps you powered throughout the day, and MagSafe technology allows convenient wireless charging and accessory support. Available in multiple stylish colors, the iPhone 14 is designed for users who demand innovation, performance, and reliability in their smartphone experience every day.",
+    "specification": [
+      "A15 Bionic chip",
+      "6.1 inch Super Retina XDR",
+      "Dual Camera System",
+      "5G Connectivity"
+    ],
+    "availability": true,
+    "rating": 4.8,
+    "brand": "Apple",
+    "stock": 50,
+    "warranty": "1 year"
+  },
+  {
+    "id": 3,
+    "title": "Samsung Galaxy S22",
+    "img": "https://i.ibb.co.com/cS9bjCNC/3.webp",
+    "category": ["phone"],
+    "price": 850,
+    "description": "The Samsung Galaxy S22 is a high-performance smartphone that delivers speed, elegance, and advanced features. Built with the latest Snapdragon processor, it ensures smooth operation whether you’re gaming, streaming, or multitasking. The 6.1-inch Dynamic AMOLED 2X display offers incredible brightness, vivid colors, and 120Hz refresh rate for a fluid viewing experience. Its professional-grade triple camera system allows you to capture stunning photos and record ultra-clear 8K videos. The device features Nightography for sharp, detailed low-light shots. With 5G connectivity, downloads and uploads are faster than ever. The sleek aluminum frame and Gorilla Glass Victus+ provide durability while maintaining a premium look. Samsung’s One UI offers customization and productivity features to enhance daily use. A long-lasting battery with super-fast charging keeps you connected longer. Whether for work or play, the Galaxy S22 blends innovation, speed, and modern design, making it an excellent smartphone choice.",
+    "specification": [
+      "Snapdragon Processor",
+      "6.1 inch Dynamic AMOLED 2X",
+      "Triple Camera",
+      "120Hz Refresh Rate"
+    ],
+    "availability": true,
+    "rating": 4.6,
+    "brand": "Samsung",
+    "stock": 42,
+    "warranty": "1 year"
+  },
+  {
+    "id": 4,
+    "title": "Apple MacBook Air M2",
+    "img": "https://i.ibb.co.com/fG46V9nt/4.webp",
+    "category": ["laptop", "macbook"],
+    "price": 1200,
+    "description": "The Apple MacBook Air M2 redefines portability and performance in a sleek, lightweight design. Powered by the groundbreaking M2 chip, it delivers unmatched speed and efficiency, making it ideal for professionals, creators, and students. The 13.6-inch Liquid Retina display offers breathtaking visuals with vibrant colors and sharp detail. With 8GB RAM and 256GB SSD storage, multitasking and file handling are smooth and responsive. The fanless design ensures silent operation, while all-day battery life supports extended use. macOS provides seamless integration with other Apple devices and a smooth, intuitive experience. The laptop is crafted from recycled aluminum, reflecting Apple’s commitment to sustainability. Features like Magic Keyboard, Touch ID, and a high-quality 1080p FaceTime HD camera enhance usability. Whether editing videos, attending online classes, or browsing the web, the MacBook Air M2 combines power and portability for users who demand excellence in their daily tasks.",
+    "specification": [
+      "Apple M2 Chip",
+      "13.6 inch Liquid Retina",
+      "8GB RAM",
+      "256GB SSD"
+    ],
+    "availability": true,
+    "rating": 4.9,
+    "brand": "Apple",
+    "stock": 28,
+    "warranty": "1 year"
+  },
+  {
+    "id": 5,
+    "title": "Apple Watch Series 8",
+    "img": "https://i.ibb.co.com/HfjRc7Nr/5.webp",
+    "category": ["smart watch", "accessories"],
+    "price": 450,
+    "description": "The Apple Watch Series 8 is a cutting-edge smartwatch designed for health, fitness, and connectivity. It features an always-on Retina display that is bright and easy to read in any lighting condition. Equipped with advanced health sensors, it can monitor heart rate, blood oxygen, and even detect irregular rhythms. A new temperature sensor supports cycle tracking and overall wellness insights. Crash Detection and Emergency SOS add an extra layer of safety during unexpected events. With watchOS, users can access a wide range of apps, notifications, and fitness tracking features directly from their wrist. The sleek design is customizable with various watch faces and interchangeable bands. Battery life lasts all day with fast charging support. Whether for workouts, productivity, or daily communication, the Apple Watch Series 8 blends technology and style. It’s more than a watch—it’s a personal assistant, health monitor, and fitness partner in one device.",
+    "specification": [
+      "Always-On Retina Display",
+      "Heart & Blood Oxygen Monitor",
+      "Crash Detection",
+      "Fast Charging"
+    ],
+    "availability": true,
+    "rating": 4.7,
+    "brand": "Apple",
+    "stock": 60,
+    "warranty": "1 year"
+  },
+  {
+    "id": 6,
+    "title": "Logitech MX Master 3 Mouse",
+    "img": "https://i.ibb.co.com/qL8NZvgM/6.jpg",
+    "category": ["accessories"],
+    "price": 100,
+    "description": "The Logitech MX Master 3 Mouse is an ergonomic masterpiece designed for productivity and comfort. Its precise Darkfield sensor works on any surface, including glass, providing maximum accuracy. The customizable buttons and scroll wheel allow you to create your own shortcuts for faster workflow. The comfortable shape supports your hand and wrist even during long hours of use. Multi-device pairing enables seamless switching between up to three computers, perfect for multitasking environments. With USB-C quick charging, the mouse can run for up to 70 days on a full charge. The device is compatible with Windows, MacOS, and Linux. The premium build quality ensures durability, while the smooth operation enhances both work and creative tasks. Ideal for designers, developers, and office users, the MX Master 3 is more than just a mouse—it’s a productivity companion that adapts to your style of working.",
+    "specification": [
+      "Ergonomic Design",
+      "Darkfield Sensor",
+      "Multi-device Pairing",
+      "USB-C Charging"
+    ],
+    "availability": true,
+    "rating": 4.5,
+    "brand": "Logitech",
+    "stock": 80,
+    "warranty": "2 years"
+  },
+  {
+    "id": 7,
+    "title": "Samsung Galaxy Buds Pro",
+    "img": "https://i.ibb.co.com/hJsXGJSs/7.jpg",
+    "category": ["accessories", "smart watch"],
+    "price": 200,
+    "description": "The Samsung Galaxy Buds Pro delivers premium audio quality and smart features for music lovers and on-the-go users. Featuring active noise cancellation, they block out unwanted sounds while allowing voice to pass through when needed. The dynamic two-way speakers provide clear highs and deep bass for an immersive experience. With touch controls, users can play, pause, or skip tracks effortlessly. 360 Audio support ensures spatial sound while watching videos or playing games. The ergonomic design ensures comfort even during extended wear. IPX7 water resistance protects against sweat and splashes, making them perfect for workouts. Multi-device pairing allows you to switch seamlessly between phone, tablet, and PC. Battery life extends up to 8 hours with ANC on, and the case provides additional charges for long trips. Stylish and compact, the Galaxy Buds Pro combine functionality, comfort, and cutting-edge technology for everyday listening pleasure.",
+    "specification": [
+      "Active Noise Cancellation",
+      "Two-way Speakers",
+      "IPX7 Water Resistance",
+      "Touch Controls"
+    ],
+    "availability": true,
+    "rating": 4.6,
+    "brand": "Samsung",
+    "stock": 65,
+    "warranty": "1 year"
+  },
+  {
+    "id": 8,
+    "title": "OnePlus Nord 3",
+    "img": "https://i.ibb.co.com/cBNJH2Q/8.jpg",
+    "category": ["phone"],
+    "price": 400,
+    "description": "The OnePlus Nord 3 is a feature-rich smartphone that balances performance and affordability. Equipped with a MediaTek Dimensity processor and 8GB RAM, it handles multitasking, gaming, and streaming efficiently. The 6.43-inch Fluid AMOLED display delivers vibrant colors and smooth visuals with a 90Hz refresh rate. Its triple camera system, including a high-resolution main sensor, captures stunning photos in various lighting conditions. OxygenOS ensures a smooth and customizable user experience, and 5G connectivity provides fast internet speeds. The phone’s sleek design is complemented by a durable glass back and aluminum frame. With a 4500mAh battery and Warp Charge fast charging, users can stay connected throughout the day. The device also includes stereo speakers, in-display fingerprint sensor, and dual SIM support. Perfect for young professionals and students, the OnePlus Nord 3 is a reliable smartphone that offers premium features without breaking the bank.",
+    "specification": [
+      "MediaTek Dimensity Processor",
+      "6.43 inch AMOLED",
+      "Triple Camera System",
+      "90Hz Refresh Rate"
+    ],
+    "availability": true,
+    "rating": 4.3,
+    "brand": "OnePlus",
+    "stock": 55,
+    "warranty": "1 year"
+  },
+  {
+    "id": 9,
+    "title": "HP Pavilion 14 Laptop",
+    "img": "https://i.ibb.co.com/p6V1zmK9/9.jpg",
+    "category": ["laptop"],
+    "price": 700,
+    "description": "The HP Pavilion 14 Laptop is designed for everyday productivity and entertainment. It comes with an Intel i5 processor and 8GB RAM for smooth multitasking. The 14-inch Full HD display offers crisp visuals, and a 512GB SSD ensures fast storage and quick boot times. Lightweight and portable, it’s perfect for students and professionals on the go. Windows 11 provides a modern interface with useful productivity tools. The laptop also features a backlit keyboard and long battery life for extended use. Whether working on projects, streaming content, or browsing online, the HP Pavilion 14 is a reliable and affordable laptop choice.",
+    "specification": [
+      "Intel i5 11th Gen",
+      "8GB RAM",
+      "512GB SSD",
+      "14 inch FHD Display"
+    ],
+    "availability": true,
+    "rating": 4.3,
+    "brand": "HP",
+    "stock": 40,
+    "warranty": "1 year"
+  },
+  {
+    "id": 10,
+    "title": "Google Pixel 7",
+    "img": "https://i.ibb.co.com/5WhyHmpy/10.jpg",
+    "category": ["phone"],
+    "price": 600,
+    "description": "The Google Pixel 7 is a premium smartphone offering pure Android experience with cutting-edge AI features. Powered by Google Tensor chip, it ensures smooth performance and efficient energy management. The 6.3-inch AMOLED display provides bright, clear visuals. Its dual camera system excels in night photography and portrait shots. With Android 13, users get timely updates and security features. The device supports 5G connectivity and fast charging, making it perfect for daily use. Its sleek design, long battery life, and AI-powered features make the Pixel 7 a smart choice for users who want both style and functionality.",
+    "specification": [
+      "Google Tensor Chip",
+      "6.3 inch AMOLED",
+      "Dual Camera",
+      "5G Connectivity"
+    ],
+    "availability": true,
+    "rating": 4.5,
+    "brand": "Google",
+    "stock": 45,
+    "warranty": "1 year"
+  },
+  {
+    "id": 11,
+    "title": "Sony WH-1000XM5 Headphones",
+    "img": "https://i.ibb.co.com/MxhBJ2HX/11.jpg",
+    "category": ["accessories"],
+    "price": 350,
+    "description": "The Sony WH-1000XM5 headphones deliver world-class noise cancellation and audio quality. Featuring advanced processing and high-resolution audio, they provide immersive sound with deep bass and clear highs. The comfortable over-ear design ensures long listening sessions without fatigue. Adaptive Sound Control automatically adjusts audio based on your environment. With up to 30 hours of battery life, quick charging, and seamless Bluetooth connectivity, the WH-1000XM5 is perfect for travel, work, or leisure. Touch controls allow easy management of music and calls, and voice assistant integration adds extra convenience.",
+    "specification": [
+      "Noise Cancellation",
+      "High-Resolution Audio",
+      "30 Hours Battery",
+      "Bluetooth Connectivity"
+    ],
+    "availability": true,
+    "rating": 4.7,
+    "brand": "Sony",
+    "stock": 50,
+    "warranty": "1 year"
+  },
+  {
+    "id": 12,
+    "title": "Apple iPad Air (5th Gen)",
+    "img": "https://i.ibb.co.com/kgJWdNTj/12.webp",
+    "category": ["tablet", "accessories"],
+    "price": 700,
+    "description": "The Apple iPad Air 5th Gen is a powerful and versatile tablet designed for productivity, creativity, and entertainment. With the M1 chip, it offers lightning-fast performance for apps, games, and multitasking. The 10.9-inch Liquid Retina display delivers stunning visuals, true-to-life colors, and sharp detail. Apple Pencil and Magic Keyboard support enhances creativity and productivity. iPadOS provides a smooth, intuitive interface with multitasking capabilities. Lightweight and portable, it’s perfect for students, professionals, and creatives on the go. The tablet supports fast charging and has long-lasting battery life. Ideal for note-taking, content creation, and media consumption, the iPad Air is a reliable choice for everyday use.",
+    "specification": [
+      "Apple M1 Chip",
+      "10.9 inch Liquid Retina",
+      "Apple Pencil Support",
+      "iPadOS"
+    ],
+    "availability": true,
+    "rating": 4.8,
+    "brand": "Apple",
+    "stock": 35,
+    "warranty": "1 year"
+  },
+  {
+    "id": 13,
+    "title": "Fitbit Charge 5",
+    "img": "https://i.ibb.co.com/ZpPF3QgB/13.webp",
+    "category": ["smart watch", "accessories"],
+    "price": 150,
+    "description": "The Fitbit Charge 5 is a sleek fitness tracker that monitors health, activity, and sleep. Equipped with built-in GPS, heart rate monitoring, and SpO2 tracking, it provides comprehensive insights for an active lifestyle. The bright AMOLED display allows easy reading, and the battery lasts up to 7 days. Users can track workouts, set goals, and receive notifications directly on their wrist. The device also offers stress management tools and guided breathing exercises. Lightweight and comfortable, the Fitbit Charge 5 combines technology and fitness, making it perfect for daily health tracking.",
+    "specification": [
+      "Built-in GPS",
+      "Heart Rate Monitor",
+      "SpO2 Tracking",
+      "7 Days Battery"
+    ],
+    "availability": true,
+    "rating": 4.4,
+    "brand": "Fitbit",
+    "stock": 70,
+    "warranty": "1 year"
+  },
+  {
+    "id": 14,
+    "title": "Dell XPS 13 Laptop",
+    "img": "https://i.ibb.co.com/k6DZVXVD/14.jpg",
+    "category": ["laptop"],
+    "price": 1100,
+    "description": "The Dell XPS 13 is a premium ultrabook designed for professionals and students seeking portability and power. Featuring Intel i7 processors and 16GB RAM, it handles multitasking effortlessly. The 13.4-inch InfinityEdge display offers vivid colors and sharp visuals. With 512GB SSD, boot times and file transfers are lightning fast. Long battery life, lightweight aluminum design, and Windows 11 make it a versatile laptop for work, study, or entertainment. Thunderbolt ports allow fast data transfer and external display connectivity. The XPS 13 blends performance, design, and portability in one compact device.",
+    "specification": [
+      "Intel i7 11th Gen",
+      "16GB RAM",
+      "512GB SSD",
+      "13.4 inch InfinityEdge Display"
+    ],
+    "availability": true,
+    "rating": 4.7,
+    "brand": "Dell",
+    "stock": 30,
+    "warranty": "1 year"
+  },
+  {
+    "id": 15,
+    "title": "Samsung Galaxy Tab S8",
+    "img": "https://i.ibb.co.com/Xf47y2Sr/15.jpg",
+    "category": ["tablet", "accessories"],
+    "price": 650,
+    "description": "The Samsung Galaxy Tab S8 is a high-performance tablet for work and entertainment. It features a large 11-inch TFT LCD display with vivid colors and 120Hz refresh rate. The Snapdragon processor and 8GB RAM allow smooth multitasking and gaming. S Pen support enhances note-taking and creative tasks. Long battery life and fast charging capabilities ensure reliable daily use. Android 12 OS provides flexibility and access to a wide range of apps. The Galaxy Tab S8 is lightweight and portable, making it ideal for students, professionals, and creatives on the go.",
+    "specification": [
+      "Snapdragon Processor",
+      "11 inch TFT LCD",
+      "8GB RAM",
+      "S Pen Support"
+    ],
+    "availability": true,
+    "rating": 4.5,
+    "brand": "Samsung",
+    "stock": 40,
+    "warranty": "1 year"
+  },
+  {
+    "id": 16,
+    "title": "Amazon Echo Dot (5th Gen)",
+    "img": "https://i.ibb.co.com/8DCTHGTd/16.webp",
+    "category": ["accessories", "smart home"],
+    "price": 60,
+    "description": "The Amazon Echo Dot 5th Gen is a compact smart speaker with Alexa voice assistant. It provides clear sound for music, alarms, and voice commands. Users can control smart home devices, ask questions, and manage daily tasks with voice commands. The device features a sleek design and LED display for time and temperature. With Wi-Fi and Bluetooth connectivity, it integrates seamlessly into your home environment. Compact, stylish, and intelligent, the Echo Dot 5 is a versatile addition to any smart home setup.",
+    "specification": [
+      "Alexa Voice Assistant",
+      "Wi-Fi & Bluetooth",
+      "Compact Design",
+      "LED Display"
+    ],
+    "availability": true,
+    "rating": 4.6,
+    "brand": "Amazon",
+    "stock": 90,
+    "warranty": "1 year"
+  },
+  {
+    "id": 17,
+    "title": "Apple MacBook Pro 14-inch",
+    "img": "https://i.ibb.co.com/MyyY5rTQ/17.jpg",
+    "category": ["macbook", "laptop"],
+    "price": 2200,
+    "description": "The Apple MacBook Pro 14-inch is a high-performance laptop designed for professionals and creatives. Powered by the M1 Pro chip, it delivers exceptional speed and efficiency for demanding applications like video editing, coding, and graphic design. The 14-inch Liquid Retina XDR display provides stunning color accuracy and contrast. With 16GB RAM and 1TB SSD storage, multitasking and large file handling are effortless. macOS ensures seamless integration with other Apple devices and services. The laptop also features a long-lasting battery, high-quality speakers, and a sleek aluminum design. Perfect for creators who require both power and portability, the MacBook Pro 14-inch is a premium tool for productivity and creativity.",
+    "specification": [
+      "Apple M1 Pro Chip",
+      "16GB RAM",
+      "1TB SSD",
+      "14 inch Liquid Retina XDR Display"
+    ],
+    "availability": true,
+    "rating": 4.9,
+    "brand": "Apple",
+    "stock": 25,
+    "warranty": "1 year"
+  },
+  {
+    "id": 18,
+    "title": "iPhone 14 Pro",
+    "img": "https://i.ibb.co.com/4Z2JH52R/18.jpg",
+    "category": ["iphone", "phone"],
+    "price": 1200,
+    "description": "The iPhone 14 Pro is Apple’s flagship smartphone offering cutting-edge technology and sleek design. Equipped with the A16 Bionic chip, it provides lightning-fast performance and energy efficiency. The Super Retina XDR display offers vivid colors, deep blacks, and excellent brightness for viewing in any environment. The triple-camera system captures stunning photos and 4K video, even in low light. iOS ensures smooth operation, regular updates, and seamless integration with other Apple devices. The device supports 5G, Face ID, MagSafe accessories, and wireless charging. With excellent battery life and advanced safety features, the iPhone 14 Pro is perfect for users seeking a powerful, reliable, and stylish smartphone.",
+    "specification": [
+      "A16 Bionic Chip",
+      "6.1 inch Super Retina XDR Display",
+      "Triple Camera System",
+      "5G Connectivity"
+    ],
+    "availability": true,
+    "rating": 4.8,
+    "brand": "Apple",
+    "stock": 50,
+    "warranty": "1 year"
+  }
+]
