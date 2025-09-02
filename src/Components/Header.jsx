@@ -56,8 +56,8 @@ const Header = () => {
         </ul>
       </div>
       <div className="navbar-end flex items-center gap-5">
-        <div class="indicator">
-          <span class="badge badge-sm indicator-item bg-black p-2 rounded-full text-white font-bold">
+        <div className="indicator">
+          <span className="badge badge-sm indicator-item bg-black p-2 rounded-full text-white font-bold">
             12
           </span>
           <div className="p-2 border-2 border-[#e6e6e6] rounded-full">
