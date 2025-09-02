@@ -3,6 +3,7 @@ import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Accessories from "./Components/Accessories";
 import AllProducts from "./Components/AllProducts";
+import Carts from "./Components/Carts";
 import DashBoard from "./Components/DashBoard";
 import Home from "./Components/Home";
 import Iphones from "./Components/Iphones";
@@ -14,6 +15,7 @@ import ProductDetails from "./Components/ProductDetails";
 import Root from "./Components/Root";
 import SmartWatch from "./Components/SmartWatch";
 import Statistics from "./Components/Statistics";
+import WishList from "./Components/WishList";
 import "./index.css";
 const router = createBrowserRouter([
   {
@@ -58,6 +60,16 @@ const router = createBrowserRouter([
       {
         path: "/dashboard",
         element: <DashBoard />,
+        children: [
+          {
+            index: true,
+            element: <Carts />,
+          },
+          {
+            path: "dashboard/wishlist",
+            element: <WishList />,
+          },
+        ],
       },
       {
         path: "/statistics",
