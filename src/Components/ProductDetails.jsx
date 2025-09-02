@@ -3,11 +3,11 @@ import { BsCart3 } from "react-icons/bs";
 import { FaRegHeart, FaStar } from "react-icons/fa";
 import { useOutletContext, useParams } from "react-router-dom";
 import { Bounce, toast } from "react-toastify";
-import { loadDataLS } from "../Utilities/DataLS";
+import { loadDataLS, loadDataWishList } from "../Utilities/DataLS";
 
 const ProductDetails = () => {
   const [product, setProducts] = useState({});
-  const setCartNumber = useOutletContext();
+  const [setCartNumber, setWishList] = useOutletContext();
 
   const { id } = useParams();
   useEffect(() => {
@@ -37,6 +37,14 @@ const ProductDetails = () => {
   const handleAddToCartButton = (id) => {
     // get local storage data
     const cart = loadDataLS();
+    const wishList = loadDataWishList();
+    const isContainInWishList = wishList.includes(id);
+    if (isContainInWishList) {
+      // removing item from wish list
+      const newWishList = wishList.filter((p) => p != id);
+      setWishList(newWishList.length);
+      localStorage.setItem("wish-list", JSON.stringify(newWishList));
+    }
     if (!cart.length) {
       cart.push(id);
       toast.success("Successfully Added!", {
@@ -83,17 +91,66 @@ const ProductDetails = () => {
     localStorage.setItem("cart", JSON.stringify(cart));
   };
 
+  const handleWishList = (id) => {
+    const wishList = loadDataWishList();
+    const cart = loadDataLS();
+    const isContainInCart = cart.includes(id);
+    if (isContainInCart) {
+      toast.error("Already Added In Your Cart!", {
+        position: "bottom-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: false,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        transition: Bounce,
+      });
+    } else {
+      const isContainInWishList = wishList.includes(id);
+      if (isContainInWishList) {
+        toast.error("Already Added In Your Wishlist!", {
+          position: "bottom-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: false,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+          transition: Bounce,
+        });
+      } else {
+        wishList.push(id);
+        toast.success("Successfully Added In Your Wishlist!", {
+          position: "bottom-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: false,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+          transition: Bounce,
+        });
+      }
+    }
+    setWishList(wishList.length);
+    localStorage.setItem("wish-list", JSON.stringify(wishList));
+  };
+
   return (
     <div className="relative">
       <div className="bg-[#9538e2] text-center text-white pt-[26px] pb-[240px]">
         <h3 className="text-[28px] font-bold">Product Details</h3>
-        <p className="max-w-[796px] mx-auto mt-4">
+        <p className="max-w-[796px] mx-auto mt-3">
           Explore the latest gadgets that will take your experience to the next
           level. From smart devices to the coolest accessories, we have it all!
         </p>
       </div>
-      <div className="relative -mt-[210px]">
-        <div className="grid grid-cols-1 lg:grid-cols-5 gap-6 p-[28px] rounded-lg lg:w-[80%] w-[90%] mx-auto  bg-white shadow-lg">
+      <div className="relative -mt-[220px]">
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-6 p-[18px] rounded-lg lg:w-[80%] w-[90%] mx-auto  bg-white shadow-lg">
           <img
             className="lg:col-span-2 h-full object-cover rounded-lg"
             src={img}
@@ -117,7 +174,7 @@ const ProductDetails = () => {
               )}
             </p>
             <p className="text-[#6b6b6f] my-4">
-              {description?.slice(0, 320)}...
+              {description?.slice(0, 120)}...
             </p>
             <p className="font-bold text-[20px]">Specification:</p>
             <ol>
@@ -140,7 +197,10 @@ const ProductDetails = () => {
               >
                 Add To Cart <BsCart3 className="text-[20px]" />
               </button>
-              <p className="p-2 rounded-full border-2 border-[#d2d2d3] cursor-pointer text-[20px]">
+              <p
+                onClick={() => handleWishList(id)}
+                className="p-2 rounded-full border-2 border-[#d2d2d3] cursor-pointer text-[20px]"
+              >
                 <FaRegHeart />
               </p>
             </div>

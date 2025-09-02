@@ -7,5 +7,14 @@ const loadDataLS = () => {
     return dataObj;
   }
 };
+const loadDataWishList = () => {
+  const data = localStorage.getItem("wish-list");
+  if (!data) {
+    return [];
+  } else {
+    const dataObj = JSON.parse(data);
+    return dataObj;
+  }
+};
 
-export { loadDataLS };
+export { loadDataLS, loadDataWishList };

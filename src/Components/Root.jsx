@@ -2,16 +2,24 @@ import { useEffect, useState } from "react";
 import { Outlet } from "react-router-dom";
 import { Bounce, ToastContainer } from "react-toastify";
 import { ProductsContext } from "../Utilities/Context";
-import { loadDataLS } from "../Utilities/DataLS";
+import { loadDataLS, loadDataWishList } from "../Utilities/DataLS";
 import Footer from "./Footer";
 import Header from "./Header";
 
 const Root = () => {
   const [products, setAllProducts] = useState([]);
   const [cartNumber, setCartNumber] = useState(0);
+  const [wishList, setWishList] = useState(0);
+
+  // load cart number data
   useEffect(() => {
     const data = loadDataLS();
     setCartNumber(data.length);
+  }, []);
+  // load wishListNumber data
+  useEffect(() => {
+    const data = loadDataWishList();
+    setWishList(data.length);
   }, []);
 
   useEffect(() => {
@@ -42,9 +50,9 @@ const Root = () => {
         style={{ fontFamily: "'Sora', sans-serif" }}
         className="min-h-screen flex flex-col"
       >
-        <Header cartNumber={cartNumber} />
+        <Header cartNumber={cartNumber} wishList={wishList} />
         <div className="flex-1">
-          <Outlet context={setCartNumber} />
+          <Outlet context={[setCartNumber, setWishList]} />
         </div>
         <Footer />
       </div>

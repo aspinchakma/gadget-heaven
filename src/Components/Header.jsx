@@ -3,7 +3,7 @@ import { FiHeart } from "react-icons/fi";
 import { NavLink } from "react-router-dom";
 import "./Header.css";
 
-const Header = ({ cartNumber }) => {
+const Header = ({ cartNumber, wishList }) => {
   return (
     <div className="navbar border-1 border-black w-[90%] lg:w-[80%] mx-auto header_container">
       <div className="navbar-start">
@@ -69,7 +69,7 @@ const Header = ({ cartNumber }) => {
             <FiHeart className="text-[19px] cursor-pointer text-[#3a3a3a] font-bold" />
           </div>
           <span className="badge badge-sm indicator-item bg-black p-2 rounded-full text-white font-bold">
-            8
+            {wishList}
           </span>
         </div>
       </div>
