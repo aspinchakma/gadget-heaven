@@ -187,11 +187,12 @@ const ProductDetails = () => {
                 </li>
               ))}
             </ol>
-            <p className="flex items-center gap-3 font-bold text-[20px]">
-              Rating <FaStar className="text-[#fde250]" />
-            </p>
+            <p className="font-bold text-[20px]">Rating:</p>
             <div className="flex items-center gap-3 rating_flex">
-              <p className="font-bold">({rating})</p>
+              <p className="font-bold flex items-center">
+                <FaStar className="text-[#fde250] mr-2" />
+                {rating}/5
+              </p>
             </div>
             <div className="flex items-center gap-4 mt-5 ">
               <button
