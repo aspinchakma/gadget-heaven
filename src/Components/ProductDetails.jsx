@@ -1,13 +1,14 @@
 import { useEffect, useState } from "react";
 import { BsCart3 } from "react-icons/bs";
 import { FaRegHeart, FaStar } from "react-icons/fa";
-import { useOutletContext, useParams } from "react-router-dom";
+import { useNavigate, useOutletContext, useParams } from "react-router-dom";
 import { Bounce, toast } from "react-toastify";
 import { loadDataLS, loadDataWishList } from "../Utilities/DataLS";
 
 const ProductDetails = () => {
   const [product, setProducts] = useState({});
   const [setCartNumber, setWishList] = useOutletContext();
+  const navigate = useNavigate();
 
   const { id } = useParams();
   useEffect(() => {
@@ -87,6 +88,8 @@ const ProductDetails = () => {
         });
       }
     }
+    // redirect to home
+    navigate("/");
     setCartNumber(cart.length);
     localStorage.setItem("cart", JSON.stringify(cart));
   };
