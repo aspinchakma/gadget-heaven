@@ -14,7 +14,7 @@ const Home = () => {
     <div className="relative top-[-73px]">
       <HomeBanner />
       <div className="lg:w-[80%] w-[90%] mx-auto">
-        <h2 className="text-xl lg:text-3xl font-bold text-center mb-4">
+        <h2 className="text-xl lg:text-3xl font-bold text-center mb-6 lg:mb-10">
           Explore Cutting-Edge Gadgets
         </h2>
         <div className="grid grid-cols-1 lg:grid-cols-6 gap-6">

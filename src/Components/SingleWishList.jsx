@@ -5,7 +5,7 @@ const SingleWishList = ({
 }) => {
   const { id, img, title, brand, description, price } = product;
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-5 gap-4 shadow-lg my-3 p-[20px] rounded-lg">
+    <div className="grid grid-cols-1 lg:grid-cols-5 gap-4 border-1 border-gray-300 my-3 p-[20px] rounded-lg">
       <img
         className="w-full object-cover h-[160px] rounded-lg"
         src={img}

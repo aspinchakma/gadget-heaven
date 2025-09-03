@@ -153,7 +153,7 @@ const ProductDetails = () => {
         </p>
       </div>
       <div className="relative -mt-[220px]">
-        <div className="grid grid-cols-1 lg:grid-cols-5 gap-6 p-[18px] rounded-lg lg:w-[80%] w-[90%] mx-auto  bg-white shadow-lg">
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-6 lg:gap-8 p-[18px] rounded-lg lg:w-[80%] w-[90%] mx-auto  bg-white border-1 border-gray-300">
           <img
             className="lg:col-span-2 h-full object-cover rounded-lg"
             src={img}

@@ -3,9 +3,9 @@ import { NavLink } from "react-router-dom";
 const Product = ({ product }) => {
   const { title, price, img, id } = product;
   return (
-    <div className="p-5 shadow-lg rounded-lg flex flex-col items-start">
+    <div className="p-5  border-gray-300 border-1 rounded-lg flex flex-col items-start">
       <img
-        className="w-full h-[181px] rounded-lg object-cover"
+        className="w-full h-[221px] rounded-lg object-cover"
         src={img}
         alt=""
       />

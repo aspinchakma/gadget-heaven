@@ -3,7 +3,7 @@ import "./ProductsContainerSideBar.css";
 
 const ProductsContainerSideBar = () => {
   return (
-    <div className="side_bar flex flex-col gap-3 p-4 lg:pb-4  rounded-lg shadow-lg lg:sticky lg:top-0">
+    <div className="side_bar flex flex-col gap-3 p-4 lg:pb-4  rounded-lg border-1 border-gray-300 lg:sticky lg:top-0">
       <NavLink
         to={`/`}
         className={`block text-center bg-[#f2f2f3] p-2 rounded-lg`}
