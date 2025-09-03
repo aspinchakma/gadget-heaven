@@ -43,6 +43,9 @@ const Header = ({ cartNumber, wishList }) => {
             <li>
               <NavLink to={`/dashboard`}>Dashboard</NavLink>
             </li>
+            <li>
+              <NavLink to={`/aboutus`}>About Us</NavLink>
+            </li>
           </ul>
         </div>
         <a className="font-bold text-xl">Gadget Heaven</a>
@@ -57,6 +60,9 @@ const Header = ({ cartNumber, wishList }) => {
           </li>
           <li>
             <NavLink to={`/dashboard`}>Dashboard</NavLink>
+          </li>
+          <li>
+            <NavLink to={`/aboutus`}>About Us</NavLink>
           </li>
         </ul>
       </div>
