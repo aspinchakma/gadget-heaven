@@ -75,9 +75,9 @@ const Carts = () => {
   return (
     <div>
       <div className="flex justify-between items-center flex-col lg:flex-row">
-        <h3 className="text-[20px] font-bold">Cart</h3>
+        <h3 className="text-[22px] font-bold">Cart</h3>
         <div className="flex gap-3 lg:flex-row flex-col items-center lg:py-6 py-4">
-          <h3 className="text-[20px] font-bold">Total Cost: ${total}</h3>
+          <h3 className="text-[18px] font-bold">Total Cost: ${total}</h3>
           {isSorted ? (
             <button
               onClick={handlePricSorted}

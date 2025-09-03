@@ -15,7 +15,7 @@ const SingleProductForCart = ({ product, handleDeleteButton }) => {
         <p className="mt-2 mb-3 text-[#6b6b6f]">{description?.slice(0, 70)}</p>
         <p className="font-bold text-[18px]">Price: ${price}</p>
       </div>
-      <div>
+      <div className="text-center">
         <button
           onClick={() => handleDeleteButton(id)}
           className="p-2 border-[#ff0000] border-2 rounded-full w-fit"

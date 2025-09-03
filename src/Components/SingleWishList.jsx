@@ -27,7 +27,7 @@ const SingleWishList = ({
           Add To Cart
         </button>
       </div>
-      <div>
+      <div className="text-center">
         <button
           onClick={() => handleCartDeleteButton(id)}
           className="p-2 border-[#ff0000] border-2 rounded-full w-[40px] h-[40px] flex items-center justify-center"

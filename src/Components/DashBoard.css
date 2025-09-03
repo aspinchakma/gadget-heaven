@@ -1,0 +1,10 @@
+.dashboard_banner_container a {
+  border: 2px solid white;
+  padding: 8px 18px;
+  border-radius: 8px;
+}
+.dashboard_banner_container .active {
+  background-color: white;
+  color: #9036db;
+  font-weight: bolder;
+}
