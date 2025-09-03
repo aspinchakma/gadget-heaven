@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useOutletContext } from "react-router-dom";
 import { loadDataLS, loadDataWishList } from "../Utilities/DataLS";
+import NoData from "./NoData";
 import SingleWishList from "./SingleWishList";
 
 const WishList = () => {
@@ -52,9 +53,9 @@ const WishList = () => {
 
   return (
     <div className="text-[19px] font-bold py-4 lg:py-8">
-      <h2 className="font-bold mb-4">WishList</h2>
-      <div>
-        {data.length ? (
+      {data.length ? (
+        <div>
+          <h2 className="font-bold mb-4">WishList</h2>
           <div>
             {data.map((product) => (
               <SingleWishList
@@ -65,10 +66,10 @@ const WishList = () => {
               />
             ))}
           </div>
-        ) : (
-          <h3>hello bro</h3>
-        )}
-      </div>
+        </div>
+      ) : (
+        <NoData />
+      )}
     </div>
   );
 };

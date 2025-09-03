@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { FaFilter } from "react-icons/fa";
 import { useNavigate, useOutletContext } from "react-router-dom";
 import { loadDataLS } from "../Utilities/DataLS";
+import NoData from "./NoData";
 import SingleProductForCart from "./SingleProductForCart";
 
 const Carts = () => {
@@ -115,7 +116,7 @@ const Carts = () => {
             ))}
           </div>
         ) : (
-          ""
+          <NoData />
         )}
       </div>
       {/* Open the modal using document.getElementById('ID').showModal() method */}
