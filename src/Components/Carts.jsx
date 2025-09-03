@@ -1,8 +1,13 @@
 import { useEffect, useState } from "react";
+import { useOutletContext } from "react-router-dom";
 import { loadDataLS } from "../Utilities/DataLS";
+import SingleProductForCart from "./SingleProductForCart";
 
 const Carts = () => {
   const [products, setProducts] = useState([]);
+  // [setCartNumber, setWishList]
+  const [setCartNumber, ...rest] = useOutletContext();
+
   useEffect(() => {
     const data = loadDataLS();
     const loadDataSever = async () => {
@@ -15,10 +20,30 @@ const Carts = () => {
 
     loadDataSever();
   }, []);
+  const handleDeleteButton = (id) => {
+    const filteredData = [...products].filter((p) => p.id != id);
+    setProducts(filteredData);
+    const dataLS = loadDataLS();
+    const storedDataLS = [...dataLS].filter((pid) => pid != id);
+    localStorage.setItem("cart", JSON.stringify(storedDataLS));
+    setCartNumber(storedDataLS.length);
+  };
 
   return (
     <div>
-      <h3>This is cart</h3>
+      {products.length ? (
+        <div>
+          {products.map((product) => (
+            <SingleProductForCart
+              product={product}
+              key={product?.id}
+              handleDeleteButton={handleDeleteButton}
+            />
+          ))}
+        </div>
+      ) : (
+        ""
+      )}
     </div>
   );
 };

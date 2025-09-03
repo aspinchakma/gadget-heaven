@@ -1,7 +1,9 @@
 import { useEffect } from "react";
-import { NavLink, Outlet } from "react-router-dom";
+import { NavLink, Outlet, useOutletContext } from "react-router-dom";
 
 const DashBoard = () => {
+  const [setCartNumber, setWishList] = useOutletContext();
+
   useEffect(() => {
     document.title = "Dashboard | Gadget Heaven";
   }, []);
@@ -19,7 +21,7 @@ const DashBoard = () => {
         </div>
       </div>
       <div className="w-[90%] lg:w-[80%] mx-auto">
-        <Outlet />
+        <Outlet context={[setCartNumber, setWishList]} />
       </div>
     </div>
   );
