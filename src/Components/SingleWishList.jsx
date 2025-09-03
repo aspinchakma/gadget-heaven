@@ -1,6 +1,10 @@
 import { MdDeleteForever } from "react-icons/md";
 
-const SingleWishList = ({ product, handleAddToCart }) => {
+const SingleWishList = ({
+  product,
+  handleAddToCart,
+  handleCartDeleteButton,
+}) => {
   const { id, img, title, brand, description, price } = product;
   return (
     <div className="grid grid-cols-1 lg:grid-cols-5 gap-4 shadow-lg my-3 p-[20px] rounded-lg">
@@ -24,7 +28,10 @@ const SingleWishList = ({ product, handleAddToCart }) => {
         </button>
       </div>
       <div>
-        <button className="p-2 border-[#ff0000] border-2 rounded-full w-[40px] h-[40px] flex items-center justify-center">
+        <button
+          onClick={() => handleCartDeleteButton(id)}
+          className="p-2 border-[#ff0000] border-2 rounded-full w-[40px] h-[40px] flex items-center justify-center"
+        >
           <MdDeleteForever className="text-[22px] text-[#ff0000] font-bold inline-block cursor-pointer" />
         </button>
       </div>

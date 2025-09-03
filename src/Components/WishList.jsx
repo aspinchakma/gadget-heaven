@@ -38,6 +38,18 @@ const WishList = () => {
     // set data to show ui
     setData(filteredData);
   };
+
+  const handleCartDeleteButton = (id) => {
+    const filteredData = [...data].filter((product) => product.id == id);
+    const wishListData = loadDataWishList();
+    const filteredLSData = wishListData.filter((pId) => pId != id);
+    // set local storage
+    localStorage.setItem("wish-list", JSON.stringify(filteredLSData));
+    // show data ui
+    setData(filteredData);
+    setWishlist(filteredLSData.length);
+  };
+
   return (
     <div className="text-[19px] font-bold py-4 lg:py-8">
       <h2 className="font-bold mb-4">WishList</h2>
@@ -47,6 +59,7 @@ const WishList = () => {
             {data.map((product) => (
               <SingleWishList
                 handleAddToCart={handleAddToCart}
+                handleCartDeleteButton={handleCartDeleteButton}
                 product={product}
                 key={product.id}
               />
