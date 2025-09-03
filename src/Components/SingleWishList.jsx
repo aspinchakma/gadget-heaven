@@ -1,5 +1,3 @@
-import { MdDeleteForever } from "react-icons/md";
-
 const SingleWishList = ({
   product,
   handleAddToCart,
@@ -22,17 +20,17 @@ const SingleWishList = ({
         <p className="font-bold text-[18px] mb-2">Price: ${price}</p>
         <button
           onClick={() => handleAddToCart(id)}
-          className="cursor-pointer text-[15px] bg-[#8d36d6] font-normal px-3 py-2 rounded-lg text-white"
+          className="cursor-pointer text-[15px] bg-[#8d36d6] font-normal px-3 py-2 rounded-lg text-white hover:bg-white hover:text-[#8d36d6] border-2 border-[#8d36d6] duration-500"
         >
           Add To Cart
         </button>
       </div>
-      <div className="text-center">
+      <div>
         <button
           onClick={() => handleCartDeleteButton(id)}
-          className="p-2 border-[#ff0000] border-2 rounded-full w-[40px] h-[40px] flex items-center justify-center"
+          className="px-5 text-[16px] py-1 rounded-lg cursor-pointer border-[#ED4C67] border-2 w-fit bg-[#ED4C67] font-normal text-white hover:bg-white hover:text-[#ED4C67] duration-500"
         >
-          <MdDeleteForever className="text-[22px] text-[#ff0000] font-bold inline-block cursor-pointer" />
+          Delete
         </button>
       </div>
     </div>

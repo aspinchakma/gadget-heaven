@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useOutletContext } from "react-router-dom";
+import { Bounce, toast } from "react-toastify";
 import { loadDataLS, loadDataWishList } from "../Utilities/DataLS";
 import NoData from "./NoData";
 import SingleWishList from "./SingleWishList";
@@ -30,7 +31,7 @@ const WishList = () => {
     localStorage.setItem("cart", JSON.stringify(cartData));
     setCartList(cartData.length);
 
-    // updation wish list data
+    // updat on wish list data
     const wishListDataLS = loadDataWishList();
     const filteredWishList = wishListDataLS.filter((pID) => pID != id);
     localStorage.setItem("wish-list", JSON.stringify(filteredWishList));
@@ -38,12 +39,36 @@ const WishList = () => {
 
     // set data to show ui
     setData(filteredData);
+    // show toast
+    toast.success("Successfully Added To Cart!", {
+      position: "bottom-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: false,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+      transition: Bounce,
+    });
   };
 
   const handleCartDeleteButton = (id) => {
     const filteredData = data.filter((product) => product.id != id);
     const lsWishListData = loadDataWishList();
     const filteredIDForLS = lsWishListData.filter((pId) => pId != id);
+    // show toast
+    toast.success("Successfully Deleted!", {
+      position: "bottom-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: false,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+      transition: Bounce,
+    });
 
     // store local storage
     localStorage.setItem("wish-list", JSON.stringify(filteredIDForLS));

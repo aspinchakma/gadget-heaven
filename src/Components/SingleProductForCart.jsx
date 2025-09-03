@@ -18,9 +18,9 @@ const SingleProductForCart = ({ product, handleDeleteButton }) => {
       <div className="text-center">
         <button
           onClick={() => handleDeleteButton(id)}
-          className="p-2 border-[#ff0000] border-2 rounded-full w-fit"
+          className="px-5 text-[16px] py-1 rounded-lg cursor-pointer border-[#ED4C67] border-2 w-fit bg-[#ED4C67] font-normal text-white hover:bg-white hover:text-[#ED4C67] duration-500"
         >
-          <MdDeleteForever className="text-[22px] text-[#ff0000] font-bold inline-block cursor-pointer" />
+          Delete
         </button>
       </div>
     </div>
