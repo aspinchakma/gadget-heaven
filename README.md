@@ -1,12 +1,28 @@
-# React + Vite
+### [Gadget Heaven – E-commerce Platform](https://gadget-heaven-gadget.netlify.app/)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Built a responsive e-commerce site with Home, About Us, Dashboard, Statistics, and 404 pages. Implemented product detail pages, add-to-cart & wishlist functionality, with data persisting via localStorage. Enabled automatic navigation, real-time cart/wishlist counters, purchase clearing, and skeleton loaders for smooth UX.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Key Features of Gadget Heaven
 
-## Expanding the ESLint configuration
+1. Responsive Pages – Includes Home, About Us, Dashboard, Statistics, and 404 pages for smooth navigation.
+2. Persistent Cart & Wishlist – Cart and wishlist data are stored in localStorage, retaining data across page reloads.
+3. Add to Cart & Wishlist Logic – Adding an item to the cart removes it from the wishlist and vice versa, with counters updating in real-time.
+4. Product Details Page – Each product has a dedicated detail page with “Add to Cart” and “Add to Wishlist” options.
+5. Automatic Navigation – After adding a product to the cart, users are automatically redirected to Home for continued shopping.
+6. Purchase Handling – Purchase button clears cart data, disables further purchases, and redirects users to Home without reload.
+7. Real-Time Counters – Shows the number of items in the cart and wishlist dynamically; hides counters when no items are selected.
+   9. keleton Loading – Product loading uses skeleton screens to enhance UX during data fetch.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Technologies
+
+- **Tailwind CSS**
+- **React JS**
+- **React Router**
+- **Daisy Ui**
+- **recharts**
+- **React Icon**
+- **React Toastify**
