@@ -26,7 +26,6 @@ const Statistics = () => {
   useEffect(() => {
     document.title = "Statistics | Gadget Heaven";
   }, []);
-  console.log(data);
   return (
     <div className="lg:w-[80%] w-[90%] mx-auto">
       <ResponsiveContainer width="100%" height={600}>
