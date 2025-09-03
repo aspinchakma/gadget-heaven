@@ -1,4 +1,10 @@
+import { useNavigate } from "react-router-dom";
+
 const HomeBanner = () => {
+  const navigate = useNavigate();
+  const handleShowNowButton = () => {
+    navigate("/dashboard");
+  };
   return (
     <div className="relative mb-[170px] lg:mb-[520px]">
       <div className="text-center bg-[#9538e2] text-white  py-[188px] lg:w-[98%] mx-auto rounded-lg w-[95%]">
@@ -11,7 +17,10 @@ const HomeBanner = () => {
             next level. From smart devices to the coolest accessories, we have
             it all!
           </p>
-          <button className="bg-white text-[#9137dd] font-bold px-5 py-2 rounded-lg cursor-pointer">
+          <button
+            onClick={handleShowNowButton}
+            className="bg-white text-[#9137dd] font-bold px-5 py-2 rounded-lg cursor-pointer"
+          >
             Shop Now
           </button>
         </div>
