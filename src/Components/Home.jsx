@@ -11,7 +11,7 @@ const Home = () => {
 
   const [setCartNumber, setWishList] = useOutletContext();
   return (
-    <div>
+    <div className="relative top-[-72px]">
       <HomeBanner />
       <div className="lg:w-[80%] w-[90%] mx-auto">
         <h2 className="text-xl lg:text-3xl font-bold text-center mb-4">

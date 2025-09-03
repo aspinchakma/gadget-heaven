@@ -48,7 +48,7 @@ const Root = () => {
       />
       <div
         style={{ fontFamily: "'Sora', sans-serif" }}
-        className="min-h-screen flex flex-col"
+        className="min-h-screen flex flex-col relative"
       >
         <Header cartNumber={cartNumber} wishList={wishList} />
         <div className="flex-1">

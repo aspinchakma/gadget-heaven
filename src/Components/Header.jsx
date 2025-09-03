@@ -1,11 +1,16 @@
 import { BsCart3 } from "react-icons/bs";
 import { FiHeart } from "react-icons/fi";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import "./Header.css";
 
 const Header = ({ cartNumber, wishList }) => {
+  const pathName = useLocation().pathname;
   return (
-    <div className="navbar border-1 border-black w-[90%] lg:w-[80%] mx-auto header_container">
+    <div
+      className={`navbar border-1 border-black w-[90%] lg:w-[80%] mx-auto header_container z-20 ${
+        pathName == "/" ? "mt-5" : ""
+      }`}
+    >
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
