@@ -4,7 +4,11 @@ const SingleProductForCart = ({ product, handleDeleteButton }) => {
   const { img, title, price, description, brand, id } = product;
   return (
     <div className="grid grid-cols-1 lg:grid-cols-5 gap-4 shadow-lg my-3 p-[20px] rounded-lg">
-      <img className="w-full object-cover  rounded-lg" src={img} alt="" />
+      <img
+        className="w-full object-cover h-[160px] rounded-lg"
+        src={img}
+        alt=""
+      />
       <div className="lg:col-span-3">
         <h3 className="text-[22px] font-bold">{title}</h3>
         <p className="font-bold">({brand})</p>
