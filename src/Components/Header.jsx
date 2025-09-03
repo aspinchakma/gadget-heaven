@@ -5,10 +5,9 @@ import "./Header.css";
 
 const Header = ({ cartNumber, wishList }) => {
   const location = useLocation().pathname;
-  console.log(location);
   return (
     <div
-      className={`navbar border-1 border-black w-[90%] lg:w-[80%] mx-auto  z-20  ${
+      className={`navbar w-[90%] lg:w-[80%] mx-auto  z-20  ${
         location == "/" ? "mt-5" : ""
       } ${location == "/" ? "header_container_two" : "header_container"}`}
     >
@@ -33,7 +32,7 @@ const Header = ({ cartNumber, wishList }) => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow dorp_down_container"
           >
             <li>
               <NavLink to={`/`}>Home</NavLink>
@@ -46,7 +45,7 @@ const Header = ({ cartNumber, wishList }) => {
             </li>
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">daisyUI</a>
+        <a className="font-bold text-xl">Gadget Heaven</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
@@ -63,20 +62,28 @@ const Header = ({ cartNumber, wishList }) => {
       </div>
       <div className="navbar-end flex items-center gap-5">
         <div className="indicator">
-          <span className="badge badge-sm indicator-item bg-black p-2 rounded-full text-white font-bold">
-            {cartNumber}
-          </span>
-          <div className="p-2 border-2 border-[#e6e6e6] rounded-full">
+          {cartNumber ? (
+            <span className="badge badge-sm indicator-item bg-black p-2 rounded-full text-white font-bold">
+              {cartNumber}
+            </span>
+          ) : (
+            ""
+          )}
+          <div className="p-2 border-2 bg-white border-[#e6e6e6] rounded-full">
             <BsCart3 className="text-[19px] cursor-pointer text-[#3a3a3a] font-bold" />
           </div>
         </div>
         <div className="indicator">
-          <div className="p-2 border-2 border-[#e6e6e6] rounded-full">
+          <div className="p-2 border-2 bg-white border-[#e6e6e6] rounded-full">
             <FiHeart className="text-[19px] cursor-pointer text-[#3a3a3a] font-bold" />
           </div>
-          <span className="badge badge-sm indicator-item bg-black p-2 rounded-full text-white font-bold">
-            {wishList}
-          </span>
+          {wishList ? (
+            <span className="badge badge-sm indicator-item bg-black p-2 rounded-full text-white font-bold">
+              {wishList}
+            </span>
+          ) : (
+            ""
+          )}
         </div>
       </div>
     </div>
