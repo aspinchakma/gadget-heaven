@@ -41,14 +41,15 @@ const WishList = () => {
   };
 
   const handleCartDeleteButton = (id) => {
-    const filteredData = [...data].filter((product) => product.id == id);
-    const wishListData = loadDataWishList();
-    const filteredLSData = wishListData.filter((pId) => pId != id);
-    // set local storage
-    localStorage.setItem("wish-list", JSON.stringify(filteredLSData));
-    // show data ui
+    const filteredData = data.filter((product) => product.id != id);
+    const lsWishListData = loadDataWishList();
+    const filteredIDForLS = lsWishListData.filter((pId) => pId != id);
+
+    // store local storage
+    localStorage.setItem("wish-list", JSON.stringify(filteredIDForLS));
+    // show ui
     setData(filteredData);
-    setWishlist(filteredLSData.length);
+    setWishlist(filteredIDForLS.length);
   };
 
   return (
