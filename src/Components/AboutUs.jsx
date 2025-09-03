@@ -1,7 +1,9 @@
 import { useEffect } from "react";
 import "./AboutUs.css";
 const AboutUs = () => {
-  useEffect(() => {}, []);
+  useEffect(() => {
+    document.title = "About Us | Gadget Heaven";
+  }, []);
   return (
     <div className="lg:w-[80%] w-[90%] mx-auto mt-6">
       <div className="  about_us_digital_data_container px-[10px] lg:px-[30px] py-[50px] lg:py-[200px]">
