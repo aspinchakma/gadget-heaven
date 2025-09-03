@@ -4,3 +4,9 @@
 .header_container .active {
   color: #9538e2;
 }
+.header_container_two a {
+  color: white;
+}
+.header_container_two .active {
+  color: white;
+}

@@ -4,12 +4,13 @@ import { NavLink, useLocation } from "react-router-dom";
 import "./Header.css";
 
 const Header = ({ cartNumber, wishList }) => {
-  const pathName = useLocation().pathname;
+  const location = useLocation().pathname;
+  console.log(location);
   return (
     <div
-      className={`navbar border-1 border-black w-[90%] lg:w-[80%] mx-auto header_container z-20 ${
-        pathName == "/" ? "mt-5" : ""
-      }`}
+      className={`navbar border-1 border-black w-[90%] lg:w-[80%] mx-auto  z-20  ${
+        location == "/" ? "mt-5" : ""
+      } ${location == "/" ? "header_container_two" : "header_container"}`}
     >
       <div className="navbar-start">
         <div className="dropdown">
